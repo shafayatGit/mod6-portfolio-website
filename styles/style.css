@@ -202,3 +202,38 @@ textarea{
     width: 420px;
     margin-bottom: 15px;
 }
+
+.hide{
+    display:none;
+}
+
+@media screen and (max-width:576px) {
+    .about_items{
+        flex-direction: column;
+    }
+
+
+    .skills_container{
+        flex-direction: column;
+    }
+    .resume_container{
+        flex-direction: column;
+    }
+    .footer_container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer_column{
+        width: 100%;
+    }
+    .skill, .about{
+        padding: 5px;
+    }
+    .skills, .resume, footer, .about{
+        margin: 50px;
+    }
+    .footer_input, textarea{
+        margin: 0;
+        width: calc(100% - 70px);
+    }
+}
